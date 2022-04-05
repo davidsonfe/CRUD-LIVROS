@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CRUD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            
+            body{ 
+                background-color: grey; 
+            }
+            
+            #area{
+                position:relative;
+                left:37%;
+                top:29%;
+                width:320px;
+                height:270px;
+            }
+            
+            #area #formulario{
+                  position:absolute;
+                  display:block;
+            }
+            fieldset{
+                 width:300px;
+                 height:250px;
+            }
+            
+            legend{
+                  font-weight:bold;
+                  font-family: "Segoe UI","Arial","Times New Roman";
+            }
+            
+            #formulario label{
+                   position:absolute;
+                   left:19px;
+                   margin-right:5px;
+            }
+            
+            
+            #formulario input.campo_titulo{
+                    position:absolute;
+                    left:130px;
+                    top:23px;
+                    width:150px;
+                    background-color: gold;
+            }
+            
+            #formulario input.campo_autor{
+                     position:absolute;
+                     left:100px;
+                     margin-top:2px;
+                     width:180px;
+                     background-color: gold;
+            }
+            
+            #formulario input.campo_cat{
+                     position:absolute;
+                     left:100px;
+                     margin-top:2px;
+                     width:180px;
+                     background-color: gold;
+            }
+            
+            #formulario input.campo_valor{
+                     position:absolute;
+                     left:100px;
+                     margin-top:2px;
+                     width:180px;
+                     background-color: gold;
+            }
+            
+            #formulario input.campo_desc{
+                     position:absolute;
+                     left:100px;
+                     margin-top:2px;
+                     width:180px;
+                     background-color: gold;
+            }
+            
+            #formulario input.btn_submit{
+                     border-style:dashed;
+                     position:absolute;
+                     bottom: 0.5em;
+                     right: 5px;
+                     background-color: gold;
+             }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="area">
+        <form id="formulario" method="post" action="CadastroLivroServlet">
+            <fieldset>
+              <legend>Formulario</legend>
+              <label>Nome do Livro:</label><input class="campo_titulo" type="text" name="titulo"><br>
+              <label>Autor:</label><input class="campo_autor" type="text" name="autor"><br>
+              <label>Categoria:</label><input class="campo_cat" type="text" name="categoria"><br>
+              <label>Valor:</label><input class="campo_valor" type="text" name="valor"><br>
+              <label>Desc:</label><input class="campo_desc" type="text" name="desc"><br>
+            <input class="btn_submit" type="submit" value="enviar"/>
+            </fieldset>
+        </form>
+        </div>
+    </body>
+</html>
